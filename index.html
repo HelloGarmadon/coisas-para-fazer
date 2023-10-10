@@ -3,10 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MYbrain</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="assets/style.css" />
+    <title>MYbrain</title>
   </head>
   <body>
+    <header>
+      <h1>My Brain</h1>
+
+      <div class="container-btn">
+        <button class="btn-add"><i class="bi bi-file-earmark-plus"></i></button>
+      </div>
+    </header>
+
+    <main>
+      <div id="myTasks">
+        <div class="list-item" draggable="true">
+          <input type="text" /> <i class="bi bi-pencil-fill edit-btn"></i>
+        </div>
+      </div>
+      <div id="completeTasks"></div>
+    </main>
     <script src="scripts/dragDrop.js"></script>
   </body>
 </html>
